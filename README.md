@@ -64,7 +64,7 @@ See the file for the details.
 
 # Usage
 
-* Check if `Story` you set in the config file matches.
+Check if `Story` you set in the config file matches.
 
 
     $story_name = 'how_much';
@@ -75,12 +75,12 @@ See the file for the details.
     
     }
 
-* Get all `Tails`
+Get all `Tails`
 
 
     $tails = \FoxTail::getTails();   // Laravel Collection
 
-* Get a `Tail`
+Get a `Tail`
 
 
     $tail = \FoxTail::getTail($tail_name);
@@ -89,7 +89,7 @@ See the file for the details.
     echo $tail->full_url;
     print_r($tail->parameters); // Array
 
-or
+    // or
 
     echo \FoxTail::getMethod($tail_name);
     echo \FoxTail::getUrl($tail_name);
@@ -109,7 +109,7 @@ or
 
     }
 
-* Get `Tail` and `Tail` name by step
+Get `Tail` and `Tail` name by step
 
 
     echo \FoxTail::getTailNameByStep();    // Current tail
