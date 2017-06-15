@@ -1,12 +1,13 @@
 {
     "name": "sukohi/fox-tail",
-    "description": "Your package description here.",
+    "description": "A Laravel package to manage routes user accessed. ",
     "authors": [
         {
             "name": "Sukohi",
-            "email": "test@example.com"
+            "email": "sukohi.capilano@gmail.com"
         }
     ],
+    "license": "MIT",
     "require": {
         "laravel/framework": "~5.0"
     },
