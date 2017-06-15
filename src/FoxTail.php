@@ -164,9 +164,9 @@ class FoxTail {
 
     }
 
-    public function isStory($tail_key) {
+    public function isStory($story_name) {
 
-        $tails = collect(array_get($this->stories, $tail_key, []));
+        $tails = collect(array_get($this->stories, $story_name, []));
 
         if($tails->count() == 0) {
 
@@ -175,7 +175,7 @@ class FoxTail {
         }
 
         $check_tails = $this->getTailNames()->take($tails->count()*-1);
-        return $tails == $check_tails;
+        return $tails->values() == $check_tails->values();
 
     }
 
