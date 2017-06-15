@@ -64,7 +64,7 @@ See the file for the details.
 
 # Usage
 
-* Check if `Story` you set in the config file matches.  
+* Check if `Story` you set in the config file matches.
 
 
     $story_name = 'how_much';
@@ -75,7 +75,7 @@ See the file for the details.
     
     }
 
-* Get all `Tails`  
+* Get all `Tails`
 
 
     $tails = \FoxTail::getTails();   // Laravel Collection
