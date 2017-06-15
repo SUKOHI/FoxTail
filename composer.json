@@ -1,0 +1,19 @@
+{
+    "name": "sukohi/fox-tail",
+    "description": "Your package description here.",
+    "authors": [
+        {
+            "name": "Sukohi",
+            "email": "test@example.com"
+        }
+    ],
+    "require": {
+        "laravel/framework": "~5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sukohi\\FoxTail\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
