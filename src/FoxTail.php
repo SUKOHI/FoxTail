@@ -197,6 +197,13 @@ class FoxTail {
 
     }
 
+    public function isPrevious($tail_name) {
+
+        $previous_tail_name = $this->getTailNameByStep(1);
+        return ($tail_name == $previous_tail_name);
+
+    }
+
     public function clear() {
 
         session()->forget($this->session_key);

@@ -96,7 +96,7 @@ Get a `Tail`
     echo \FoxTail::getFullUrl($tail_name);
     print_r(\FoxTail::getParameters($tail_name));   // Array
 
-* Check if FoxTail has a `Tail` or  not
+Check if FoxTail has a `Tail` or  not
 
 
     $tail_name = 'about_us';
@@ -109,6 +109,17 @@ Get a `Tail`
 
     }
 
+Check if the previous `Tail` name
+
+    $tail_name = 'about_us';
+
+    if(\FoxTail::isPrevious($tail_name)) {
+
+        echo 'That is right!';
+        
+    }
+
+
 Get `Tail` and `Tail` name by step
 
 
@@ -117,7 +128,6 @@ Get `Tail` and `Tail` name by step
 
     print_r(\FoxTail::getTailByStep());    // Current tail by step
     print_r(\FoxTail::getTailByStep(1));    // The previous tail by step
-    
 
 License
 ====
